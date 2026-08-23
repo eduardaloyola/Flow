@@ -115,4 +115,4 @@ Crie uma conta pela tela de cadastro e comece a usar — os dados ficam salvos e
 
 ---
 
-Projeto construído para fins de aprendizado e portfólio.
+Projeto construído para fins de aprendizado.

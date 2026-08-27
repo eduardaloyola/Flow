@@ -98,7 +98,7 @@ Crie uma conta pela tela de cadastro e comece a usar — os dados ficam salvos e
 | DELETE | `/api/tasks/:id`           | Remove uma tarefa                   | sim |
 | GET    | `/api/tasks/stats/summary` | Retorna estatísticas do usuário     | sim |
 
-## 💡 Decisões de arquitetura (para explicar na entrevista)
+## 💡 Decisões de arquitetura 
 
 - **Persistência em JSON em vez de banco real**: escolha deliberada para manter o projeto 100% autocontido e fácil de rodar em qualquer máquina em segundos, sem exigir instalação de SGBD. A camada `config/db.ts` isola essa lógica, então trocar por Postgres/MongoDB no futuro afetaria só um arquivo.
 - **JWT + bcrypt**: padrão de mercado para autenticação stateless — o servidor não guarda sessão, só valida o token a cada requisição.
